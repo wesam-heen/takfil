@@ -64,7 +64,8 @@
     background: no-repeat top center / cover;
     opacity: 0;
     // -webkit-filter: blur(5px);
-    //         filter: blur(5px);
+    background-color: #ffffff10;
+    filter: blur(14px);
     transition: opacity 1s, filter 1s;
 
     @media (max-width: 992px) {

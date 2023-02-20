@@ -4,13 +4,10 @@
 //   |-> Content
 // =====================================
 
-
 @import "_variables";
 @import "helpers-placeholders";
 
-
-
- /**
+/**
   * -------------------------------------------------------------------------------
   * ( 04 ) - Content
   * -------------------------------------------------------------------------------
@@ -34,7 +31,6 @@
   *
   */
 
-
 #content {
   position: relative;
   // overflow: hidden;
@@ -42,15 +38,18 @@
   background-color: #fff;
   z-index: 5; /* Important for icons animations */
 
-  h1,h2,h3,h4,h5,h6 {
-
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
   }
 }
 
 #content-wrap {
   position: relative;
 }
-
 
 /*  [ 01 ] - Content
 ====================== */
@@ -107,8 +106,6 @@
   }
 } // width < 992px
 
-
-
 /*  [ 02 ] - Sidebar
 ====================== */
 
@@ -137,20 +134,17 @@
   }
 }
 
-
 @media (max-width: 992px) {
   .sidebar {
     padding-top: 20px;
   }
 } // width < 992px
 
-
 /*  [ 03 ] - Section Our Services 1
 ===================================== */
 
 #section-our-services-1 {
   .section-content {
-
   }
 
   .title-featured-1 {
@@ -201,16 +195,12 @@
   }
 }
 
-
-
-
 /*  [ 04 ] - Section Our Services 2
 ===================================== */
 
 #section-our-services-2 {
   background-color: #f7f7f7;
   .section-content {
-
   }
 
   .pl-55 {
@@ -247,7 +237,6 @@
   }
 }
 
-
 /* Video Preview */
 .video-preview {
   overflow: hidden;
@@ -255,10 +244,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 425px;
+  height: auto;
   border-radius: 10px;
-  box-shadow: 5px 15px 28px 5px rgba(#000,0.18);
-  background-color: #ddd;
+  box-shadow: 5px 15px 28px 5px rgba(#000, 0.18);
+ 
 
   @media (max-width: 992px) {
     min-height: 400px;
@@ -303,9 +292,8 @@
   text-align: left;
 
   @media (max-width: 992px) {
-
   } // width < 992px
-  
+
   i {
     position: relative;
     display: inline-flex;
@@ -341,7 +329,6 @@
     }
 
     @media (max-width: 480px) {
-
     } // width < 480px
   }
 
@@ -356,7 +343,6 @@
     color: #fff;
     transition: all 0.2s !important;
   }
-  
 
   &:hover {
     i {
@@ -365,7 +351,7 @@
       &::after {
         transform: scale(1.02);
         opacity: 1;
-      }     
+      }
     }
 
     .title {
@@ -398,21 +384,18 @@
     // transform: scale(1);
     box-shadow: 0 0 0 30px rgba(lighten($theme-color-1, 15%), 0);
   }
-    100% {
+  100% {
     // @include transform(scale(.9));
     // transform: scale(0.9);
     box-shadow: 0 0 0 0 rgba(lighten($theme-color-1, 15%), 0);
   }
 }
 
-
-
 /*  [ 05 ] - Section Some Facts 1
 =================================== */
 
 #section-some-facts-1 {
   .section-content {
-
   }
 }
 
@@ -470,8 +453,10 @@
   @media (max-width: 768px) {
     &.boxes-3,
     &.boxes-4 {
-      > li { width: 100%; }
-      
+      > li {
+        width: 100%;
+      }
+
       &.mq-768 {
         > li {
           width: 100%;
@@ -486,18 +471,17 @@
   @media (max-width: 992px) {
     margin-bottom: -40px;
   } // width < 992px
-  
+
   > li {
     @media (max-width: 992px) {
       margin-bottom: 40px;
     } // width < 992px
-    
+
     @media (max-width: 600px) {
       width: 100% !important;
     } // width < 600px
   }
 }
-
 
 /* Box Some Fact 1 */
 .box-some-fact-1 {
@@ -518,7 +502,7 @@
     color: $theme-color-1;
     transition: all 0.25s;
   }
-  
+
   .box-content {
     width: 100%;
 
@@ -552,46 +536,43 @@
 }
 
 .counter-stats .digit {
-  position:relative;
+  position: relative;
   // overflow:hidden;
   display: inline-block !important;
 }
 
 .counter-stats .digit > .digit-value {
-  visibility:hidden;
+  visibility: hidden;
   display: inline-block;
 }
-  
+
 .counter-stats .digit .counter-animator {
-  position:absolute;
-  top:0;
-  left:0;
-  bottom:0;
-  right:0;
-  overflow:hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
 }
-  
+
 .counter-stats .digit .counter-animator ul {
-  list-style:none;
-  margin:0;
-  padding:0;
-  position:relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
   transition: all 2s cubic-bezier(0.19, 1, 0.4, 1);
   // transition: all 1.5s ease;
 }
-  
+
 .counter-stats .digit .counter-animator ul li {
-  margin-top:0;
+  margin-top: 0;
 }
-
-
 
 /*  [ 06 ] - Section Pricing Plans 1
 ====================================== */
 
 #section-pricing-plans-1 {
   .section-content {
-
   }
 
   .section-title {
@@ -604,7 +585,7 @@
 }
 
 /* Pricing Table */
-.pricing-table {  
+.pricing-table {
   .row {
     // margin: 0 -2.5px;
   }
@@ -628,7 +609,7 @@
     box-shadow: inset 0 0 0 4px #ddd;
     border-radius: 10px;
     transition: all 0.3s;
-    
+
     &.featured {
       border: none;
       box-shadow: inset 0 0 0 4px $theme-color-1;
@@ -645,10 +626,10 @@
 
       .pt-column-header {
         border-bottom-color: rgba(#fff, 0.5);
-        
+
         .icon,
         .price h2 {
-        color: $theme-color-1;
+          color: $theme-color-1;
         }
       }
 
@@ -661,8 +642,9 @@
 
     &:not(.featured):hover,
     &.featured:hover {
-    transform: translateY(-15px);
-    box-shadow: inset 0 0 0 4px $theme-color-1, 0 20px 28px 5px rgba(#000, 0.1);
+      transform: translateY(-15px);
+      box-shadow: inset 0 0 0 4px $theme-color-1,
+        0 20px 28px 5px rgba(#000, 0.1);
     }
 
     &:not(.featured):hover {
@@ -679,7 +661,6 @@
   }
 
   .pt-column:hover {
-
   }
 
   /* Column Header */
@@ -695,7 +676,7 @@
       font-size: 36px;
       color: $dark-color;
     }
-    
+
     .title {
       font-size: 14px;
       font-family: $heading-font;
@@ -708,7 +689,7 @@
     .price {
       display: flex;
       flex-direction: column;
-      
+
       h2 {
         margin-bottom: 0;
         font-size: 48px;
@@ -751,20 +732,16 @@
 
   /* Column Footer */
   .pt-column-footer {
-
   }
 }
-
-
 
 /*  [ 07 ] - Section Customers Testimonials 1
 =============================================== */
 
 #section-customers-testimonials-1 {
   background-color: #f7f7f7;
-  
-  .section-content {
 
+  .section-content {
   }
 }
 
@@ -786,7 +763,7 @@
   top: 0;
   text-align: center;
   transition: all 0.2s;
-  
+
   .highlighted & {
     border-color: $theme-color-1;
     box-shadow: 0 0 50px 15px rgba($dark-color, 0.05);
@@ -802,14 +779,12 @@
   }
 
   &:hover {
-
   }
 
   &.text-white {
     color: #fff;
 
     .ts-content {
-
     }
   }
 
@@ -838,7 +813,7 @@
       background-color: $theme-color-1;
     }
   }
-  
+
   .ts-person {
     overflow: hidden;
     position: relative;
@@ -884,7 +859,7 @@
     .slick-list {
       // margin: 0 -15px;
     }
-    
+
     .slick-slide {
       // padding: 0 15px;
       // margin: 0;
@@ -897,9 +872,6 @@
   }
 }
 
-
-
-
 /*  [ 08 ] - Section Clients 1
 ================================ */
 
@@ -907,7 +879,6 @@
   background-color: $theme-color-1;
 
   .section-content {
-
   }
 }
 
@@ -943,21 +914,17 @@
       display: flex;
       align-items: center;
     }
-    
+
     .slick-list {
       margin: 0 -15px; // 15px padding + 15px of slick-slide
     }
-    
+
     .slick-slide {
       padding: 0 15px;
       transition: all 0.4s;
     }
   }
 }
-
-
-
-
 
 /*  [ 09 ] - Section CTA 1
 ============================ */
@@ -1017,18 +984,15 @@
           display: block;
         } // width < 992px
 
-         > [class*="col-"] {
+        > [class*="col-"] {
           display: flex;
           align-items: center;
 
           .box-center {
             width: 100%;
           }
-         }
+        }
       }
     }
   }
 }
-
-
-
