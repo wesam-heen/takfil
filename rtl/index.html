@@ -37,7 +37,11 @@
       sizes="114x114"
       href="../images/general-elements/favicon/apple-touch-icon-114x114.png"
     />
-
+    <!-- for animate css library -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!-- Title
 	============================================= -->
     <title>تكفيل لخدمات متابعة المعاملات</title>
@@ -114,14 +118,16 @@
 		============================================= -->
       <section id="banner">
         <div class="banner-parallax" data-banner-height="650">
-          <img src="../images/files/servicesLogo.png" alt="" />
+          <video width="100%" height="100%"  autoplay muted  class="bg-element">
+						<source src="../videos/video1.mp4" type="video/mp4">
+					  </video>
           <div class="overlay-colored color-bg-dark opacity-85"></div>
           <!-- .overlay-colored end -->
-          <div class="slide-content">
+          <div class="slide-content ">
             <div class="container">
               <div class="row">
-                <div class="col-md-6">
-                  <div class="banner-center-box text-white">
+                <div class="col-md-6 wow animate__bounceInRight">
+                  <div class="banner-center-box text-white ">
                     <span class="subheading"
                       >تكفيل لخدمات متابعة المعاملات</span
                     >
@@ -156,7 +162,7 @@
                   <!-- .banner-center-box end -->
                 </div>
                 <!-- .col-md-6 end -->
-                <div class="col-md-5 col-md-push-1">
+                <div class="col-md-5 col-md-push-1 wow animate__bounceInLeft">
                   <div class="banner-center-box">
                     <div
                       class="cta-subscribe cta-subscribe-1 box-form text-center"
@@ -248,8 +254,8 @@
           <div class="container">
             <div class="row">
               <div class="col-md-8 col-md-push-2">
-                <h2 class="title-featured-1 text-center">
-                  <span class="heading-200"
+                <h2 class="title-featured-1 text-center wow animate__fadeInUp">
+                  <span class="heading-200 "
                     >نحن دائما نأخذ الانتباه لكل التفاصيل خلال مراحل العمل. نحن
                     نراعي ونصنع</span
                   >
@@ -269,7 +275,7 @@
                 <!-- .divider-container end -->
               </div>
               <!-- .col-md-12 end -->
-              <div class="col-md-3 col-sm-6">
+              <div class="col-md-3 col-sm-6 wow animate__lightSpeedInRight">
                 <div class="box-info box-service-1 mb-md-40">
                   <div class="box-icon">
                     <span class="icon icon-Megaphone"></span>
@@ -284,7 +290,7 @@
                 <!-- .box-info box-service-1 end -->
               </div>
               <!-- .col-md-3 -->
-              <div class="col-md-3 col-sm-6">
+              <div class="col-md-3 col-sm-6 wow animate__lightSpeedInRight">
                 <div class="box-info box-service-1 mb-md-40">
                   <div class="box-icon">
                     <span class="icon icon-Bulb"></span>
@@ -301,7 +307,7 @@
                 <!-- .box-info box-service-1 end -->
               </div>
               <!-- .col-md-3 -->
-              <div class="col-md-3 col-sm-6">
+              <div class="col-md-3 col-sm-6 wow animate__lightSpeedInRight">
                 <div class="box-info box-service-1 mb-sm-40">
                   <div class="box-icon">
                     <span class="icon icon-Message"></span>
@@ -319,7 +325,7 @@
                 <!-- .box-info box-service-1 end -->
               </div>
               <!-- .col-md-3 -->
-              <div class="col-md-3 col-sm-6">
+              <div class="col-md-3 col-sm-6 wow animate__lightSpeedInRight">
                 <div class="box-info box-service-1">
                   <div class="box-icon">
                     <span class="icon icon-Files"></span>
@@ -353,7 +359,7 @@
         <div class="section-content">
           <div class="container">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 wow animate__bounce">
                 <div class="section-title mt-10 mt-md-0">
                   <h2>
                     <span class="heading-200">تعلم كيف يمكنك أن</span> تنمي
@@ -448,25 +454,23 @@
                 >
               </div>
               <!-- .col-md-6 end -->
-              <div class="col-md-6 mt-md-60">
-                <div class="video-preview">
-                  <a
-                    class="img-bg lightbox-iframe"
-                    href="https://vimeo.com/45830194"
-                  >
-                    <div class="overlay-colored color-bg-dark opacity-50"></div>
-                    <!-- .overlay-colored end -->
-                    <img
-                      src="../images/files/img-featured-1/img-1.jpg"
-                      alt=""
-                    /> </a
-                  ><!-- .img-bg end -->
-                  <a
-                    class="btn-video lightbox-iframe"
-                    href="https://vimeo.com/45830194"
-                  >
-                    <i class="fa fa-play"></i> </a
-                  ><!-- .btn-video end -->
+              <div class="col-md-6 mt-md-60 wow animate__zoomIn">
+                <div class="video-preview ">
+                  <video width="100%" height="100%" controls>
+                    <source src="../videos/video2.mp4" type="video/mp4">
+                    
+                    Your browser does not support the video tag.
+                    </video>
+                            <div class="overlay-colored color-bg-dark opacity-25"></div>
+                            <!-- .overlay-colored end -->
+                          
+                          >
+                          <a
+                            class="btn-video lightbox-iframe"
+                            href="../videos/video2.mp4"
+                          >
+                            <i class="fa fa-play"></i> </a>
+                 <!-- .btn-video end -->
                 </div>
                 <!-- .video-preview end -->
               </div>
@@ -491,7 +495,7 @@
               <div class="col-md-12">
                 <ul class="list-some-facts list-boxes boxes-4">
                   <li>
-                    <div class="box-info box-some-fact-1 text-white">
+                    <div class="box-info box-some-fact-1 ">
                       <div class="box-icon">
                         <span class="icon icon-Files"></span>
                       </div>
@@ -505,7 +509,7 @@
                     <!-- .box-info box-some-fact-1 end -->
                   </li>
                   <li>
-                    <div class="box-info box-some-fact-1 text-white">
+                    <div class="box-info box-some-fact-1 ">
                       <div class="box-icon">
                         <span class="icon icon-Users"></span>
                       </div>
@@ -519,7 +523,7 @@
                     <!-- .box-info box-some-fact-1 end -->
                   </li>
                   <li>
-                    <div class="box-info box-some-fact-1 text-white">
+                    <div class="box-info box-some-fact-1">
                       <div class="box-icon">
                         <span class="icon icon-MessageLeft"></span>
                       </div>
@@ -533,7 +537,7 @@
                     <!-- .box-info box-some-fact-1 end -->
                   </li>
                   <li>
-                    <div class="box-info box-some-fact-1 text-white">
+                    <div class="box-info box-some-fact-1 ">
                       <div class="box-icon">
                         <span class="icon icon-Time"></span>
                       </div>
@@ -582,7 +586,7 @@
               <div class="col-md-12">
                 <div class="pricing-table">
                   <div class="row">
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-4 col-sm-6 wow animate__jello">
                       <div class="pt-column">
                         <div class="pt-column-header">
                           <span class="icon icon-User"></span>
@@ -638,7 +642,7 @@
                       <!-- .pt-column end -->
                     </div>
                     <!-- .col-md-4 end -->
-                    <div class="col-md-4 col-sm-6 mt-sm-50">
+                    <div class="col-md-4 col-sm-6 mt-sm-50 wow animate__jello">
                       <div class="pt-column featured">
                         <div class="pt-column-header">
                           <span class="icon icon-Flag"></span>
@@ -698,7 +702,7 @@
                       <!-- .pt-column end -->
                     </div>
                     <!-- .col-md-4 end -->
-                    <div class="col-md-4 col-sm-6 mt-md-50">
+                    <div class="col-md-4 col-sm-6 mt-md-50 wow animate__jello">
                       <div class="pt-column">
                         <div class="pt-column-header">
                           <span class="icon icon-Starship"></span>
@@ -794,6 +798,7 @@
                 <!-- .section-title end -->
               </div>
               <!-- .col-md-6 end -->
+              <!-- .col-md-6 end -->
               <div class="col-md-12">
                 <div class="slider-testimonials mt-10">
                   <ul class="slick-slider">
@@ -801,22 +806,21 @@
                       <div class="slide">
                         <div class="testimonial-single-1">
                           <div class="ts-content">
-                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
-                            لصفحة ما سيلهي القارئ عن التركيز على الشكل
+                            Quick service...my fines were reduced and work completed in short time
                             <span class="icon-quote">“</span>
                           </div>
                           <!-- .ts-content end -->
                           <div class="ts-person">
                             <div class="ts-img">
                               <img
-                                src="../images/files/sliders/clients-testimonials/img-1.jpg"
+                                src="../images/files/review1.png"
                                 alt=""
                               />
                             </div>
                             <!-- .ts-img end -->
                             <div class="ts-name">
-                              <h4>محمد عبد الله</h4>
-                              <span>مطور الخلفية</span>
+                              <h4>Himani Shah</h4>
+                              <span>Client</span>
                             </div>
                             <!-- .ts-name end -->
                             <div class="rating">
@@ -838,22 +842,21 @@
                       <div class="slide">
                         <div class="testimonial-single-1">
                           <div class="ts-content">
-                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
-                            لصفحة ما سيلهي القارئ عن التركيز على الشكل
+                            Best services
                             <span class="icon-quote">“</span>
                           </div>
                           <!-- .ts-content end -->
                           <div class="ts-person">
                             <div class="ts-img">
                               <img
-                                src="../images/files/sliders/clients-testimonials/img-2.jpg"
+                                src="../images/files/review2.png"
                                 alt=""
                               />
                             </div>
                             <!-- .ts-img end -->
                             <div class="ts-name">
-                              <h4>محمود خالد</h4>
-                              <span>مطور واجهة أمامية</span>
+                              <h4>mohamed ebrahem</h4>
+                              <span>Client</span>
                             </div>
                             <!-- .ts-name end -->
                             <div class="rating">
@@ -875,22 +878,20 @@
                       <div class="slide">
                         <div class="testimonial-single-1">
                           <div class="ts-content">
-                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
-                            لصفحة ما سيلهي القارئ عن التركيز على الشكل
-                            <span class="icon-quote">“</span>
+                            من افضل شركات والمصداقيه وانا تعاملت معاهم                              <span class="icon-quote">“</span>
                           </div>
                           <!-- .ts-content end -->
                           <div class="ts-person">
                             <div class="ts-img">
                               <img
-                                src="../images/files/sliders/clients-testimonials/img-3.jpg"
+                                src="../images/files/review3.png"
                                 alt=""
                               />
                             </div>
                             <!-- .ts-img end -->
                             <div class="ts-name">
-                              <h4>عبد الرحمن أحمد</h4>
-                              <span>مصمم واجهة مستخدم</span>
+                              <h4>ابو يوسف الامي</h4>
+                              <span>Client</span>
                             </div>
                             <!-- .ts-name end -->
                             <div class="rating">
@@ -912,22 +913,21 @@
                       <div class="slide">
                         <div class="testimonial-single-1">
                           <div class="ts-content">
-                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
-                            لصفحة ما سيلهي القارئ عن التركيز على الشكل
+                            Great service
                             <span class="icon-quote">“</span>
                           </div>
                           <!-- .ts-content end -->
                           <div class="ts-person">
                             <div class="ts-img">
                               <img
-                                src="../images/files/sliders/clients-testimonials/img-1.jpg"
+                                src="../images/files/review4.png"
                                 alt=""
                               />
                             </div>
                             <!-- .ts-img end -->
                             <div class="ts-name">
-                              <h4>مصطفى إبراهيم</h4>
-                              <span>مطور الخلفية</span>
+                              <h4>Mohamad _MB7</h4>
+                              <span>Client</span>
                             </div>
                             <!-- .ts-name end -->
                             <div class="rating">
@@ -949,22 +949,21 @@
                       <div class="slide">
                         <div class="testimonial-single-1">
                           <div class="ts-content">
-                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
-                            لصفحة ما سيلهي القارئ عن التركيز على الشكل
+                            شركة ذات خبرة وكفاءة جيده وفقكم الله مشكورين
                             <span class="icon-quote">“</span>
                           </div>
                           <!-- .ts-content end -->
                           <div class="ts-person">
                             <div class="ts-img">
                               <img
-                                src="../images/files/sliders/clients-testimonials/img-2.jpg"
+                                src="../images/files/reaview5.png"
                                 alt=""
                               />
                             </div>
                             <!-- .ts-img end -->
                             <div class="ts-name">
-                              <h4>عبد الرحمن أحمد</h4>
-                              <span>مصمم واجهة مستخدم</span>
+                              <h4>Yassin Alkhalil</h4>
+                              <span>Client</span>
                             </div>
                             <!-- .ts-name end -->
                             <div class="rating">
@@ -987,6 +986,7 @@
                 </div>
                 <!-- .slider-testimonials end -->
               </div>
+              <!-- .col-md-12 end -->
               <!-- .col-md-12 end -->
             </div>
             <!-- .row end -->
@@ -1086,10 +1086,10 @@
       <!-- === Section CTA 1 =========== -->
       <div
         id="section-cta-1"
-        class="section-parallax center-vertical text-white"
+        class="section-parallax center-vertical "
       >
         <img src="../images/files/parallax-bg/img-3.jpg" alt="" />
-        <div class="overlay-colored color-bg-dark opacity-85"></div>
+        <div class="overlay-colored color-bg-dark "></div>
         <!-- .overlay-colored end -->
         <div class="section-content">
           <div class="container">
@@ -1101,7 +1101,7 @@
                     <br />
                     فلنبدأ الآن!
                   </h1>
-                  <p class="description">
+                  <p class="description color-dark">
                     نحن نراعي ونصنع خدمات ملائمة وحلول لعملائنا من أجل تحقيق
                     وإرضاء احتياجاتهم. نحن دائما نأخذ الانتباه لكل التفاصيل خلال
                     العمل.
@@ -1112,7 +1112,7 @@
               <!-- .col-md-6 end -->
               <div class="col-md-6">
                 <div class="box-center">
-                  <div class="btn-row style-2 mt-md-50">
+                  <div class="btn-row style-2 mt-md-50 color-dark">
                     <a
                       class="btn x-large colorful hover-dark rounded move-top"
                       href="#"
@@ -1140,77 +1140,146 @@
 
       <!-- Footer
 		============================================= -->
-      <footer id="footer">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7216.644894117039!2d55.313799253906225!3d25.259736299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d7eb6bc7afb%3A0x7b8e723be3508a44!2z2KrZg9mB2YrZhCDZhNiu2K_Zhdin2Kog2YXYqtin2KjYudipINin2YTZhdi52KfZhdmE2KfYqiBUYWtmaWwgRG9jdW1lbnRzIENsZWFyaW5n!5e0!3m2!1sen!2sae!4v1676639803050!5m2!1sen!2sae"
-          width="400"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
 
-        <div id="footer-bar-1" class="footer-bar">
-          <div class="footer-bar-wrap">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="fb-row">
-                    <div class="copyrights-message">
-                      <span>جميع الحقوق محفوظة لـ </span>
-                      <a
-                        href="javascript
-										:;"
-                        target="takfil.ae/index.html"
-                      >
-                        تكفيل لخدمات متابعة المعاملات
-                      </a>
-                      <span> ©2023</span>
-                    </div>
-                    <!-- .copyrights-message end -->
-                    <ul
-                      class="social-icons x4 grey-bg hover-colorful-bg animated rounded"
-                    >
-                      <li>
-                        <a
-                          class="si-twitter"
-                          href="https://www.facebook.com/Takfil.TDM"
-                          ><i class="fa fa-twitter"></i
-                          ><i class="fa fa-twitter"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          class="si-facebook"
-                          href="https://www.facebook.com/Takfil.TDM"
-                          ><i class="fa fa-facebook"></i
-                          ><i class="fa fa-facebook"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          class="si-youtube"
-                          href="https://www.facebook.com/Takfil.TDM"
-                          ><i class="fa fa-youtube"></i
-                          ><i class="fa fa-youtube"></i
-                        ></a>
-                      </li>
-                    </ul>
-                    <!-- .social-icons end -->
-                  </div>
-                  <!-- .fb-row end -->
-                </div>
-                <!-- .col-md-12 end -->
-              </div>
-              <!-- .row end -->
-            </div>
-            <!-- .container end -->
+      <!-- Footer
+		============================================= -->
+    <div class="section-content mt-50">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>
+            <span class="heading-200">Where</span>
+            <br />
+            Our Location
+          </h2>
           </div>
-          <!-- .footer-bar-wrap -->
-        </div>
-        <!-- #footer-bar-1 end -->
-      </footer>
+          <div class="row" >
+          <div class="map-container col-md-6 wow animate__backInRight">
+            <h2 class="title-map">Takfil Documents Clearing Services</h2>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7216.644894117039!2d55.313799253906225!3d25.259736299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d7eb6bc7afb%3A0x7b8e723be3508a44!2z2KrZg9mB2YrZhCDZhNiu2K_Zhdin2Kog2YXYqtin2KjYudipINin2YTZhdi52KfZhdmE2KfYqiBUYWtmaWwgRG9jdW1lbnRzIENsZWFyaW5n!5e0!3m2!1sen!2sae!4v1676639803050!5m2!1sen!2sae"
+          
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class=" map-container  col-md-6 wow animate__backInLeft">
+            <h2 class="title-map">Takfil Digital marketing</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14433.289788234079!2d55.322039!3d25.2597363!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x17afa439d01574dc!2sTakfil%20Digital%20marketing!5e0!3m2!1sen!2sae!4v1676886832397!5m2!1sen!2sae"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+          </div>
+          </div>
+      
+      </div>
+     </div>
+   
+
+<!-- Start footer -->
+<div class="footer">
+   <div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="box">
+				<h3>تكفيل</h3>
+				<ul class="social">
+				  <li>
+					  <a href="" class="facebook">
+						  <i class="fa-brands fa-facebook-f"></i>
+					  </a>
+					</li>
+					<li>
+					  <a href="" class="telegram">
+						<i class="fa-brands fa-telegram"></i>
+					  </a>
+					</li>
+					<li>
+					  <a href="" class="whatsapp">
+						  <i class="fa-brands fa-whatsapp"></i>
+					  </a>
+					</li>
+			  </ul>
+				<p class="text">
+					contact with us on social media
+				</p>
+				<div class="qr">
+				  <img src="images/qr.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="box">
+				<h2>روابط مهمة </h2>
+				  <ul class="links">
+					  <li><a href="">Homepage</a></li>
+					  <li><a href="">About us</a></li>
+					  <li><a href="">Services</a></li>
+					  <li><a href="">History</a></li>
+					  <li><a href="">Our Team</a></li>
+					  <li><a href="">Job</a></li>
+					  <li><a href="">Contact</a></li>
+					</ul>
+			  </div>
+		</div>
+		<div class="col-md-3">
+			<div class="box">
+		
+				<div class="line">
+				  <i class="fas fa-phone-volume fa-fw fa-2x"></i>
+				  <div class="info">
+					<span></span>
+					<span></span>
+				  </div>
+				</div>
+				<div class="line">
+				  <i class="fa-solid fa-envelope fa-2x"></i>
+					<div class="info">
+					  <span></span>
+					  <span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="time-work">
+				<h2>أوقات العمل</h2>
+				<div class="line">
+				  <i class="far fa-clock fa-fw"></i>
+				  <span>Monday :</span>
+				  <p>Business Hours: From 09:00 To 18:00</p>
+				</div>
+				<div class="line">
+				  <i class="far fa-clock fa-fw"></i>
+				  <span>Tuesday :</span>
+				  <p>Business Hours: From 09:00 To 18:00</p>
+				</div>
+				<div class="line">
+				  <i class="far fa-clock fa-fw"></i>
+				  <span>Wednesday :</span>
+				  <p>Business Hours: From 09:00 To 18:00</p>
+				</div>
+				<div class="line">
+				  <i class="far fa-clock fa-fw"></i>
+				  <span>Thursday :</span>
+				  <p>Business Hours: From 09:00 To 18:00</p>
+				</div>
+				<div class="line">
+				  <i class="far fa-clock fa-fw"></i>
+				  <span>Friday :</span>
+				  <p>Business Hours: From 09:00 To 18:00</p>
+				</div>
+				<div class="line">
+				  <i class="far fa-clock fa-fw"></i>
+				  <span>Saturday :</span>
+				  <p>Business Hours: From 09:00 To 18:00</p>
+				</div>
+			   </div>
+		</div>
+		
+	</div>
+  
+
+	<p class="copyright">حقوق الملكية © 2023. تم انشاء الموقع بواسطة شركة تكفيل</p>
+   </div>
+</div>
+  <!-- End footer -->
       <!-- #footer end -->
     </div>
     <!-- #full-container end -->
@@ -1221,6 +1290,12 @@
 
     <!-- External JavaScripts
 	============================================= -->
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
+  integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
     <script src="../js/jquery.js"></script>
     <script src="../js/jRespond.min.js"></script>
     <script src="../js/jquery.fitvids.js"></script>
@@ -1235,5 +1310,9 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ar.js"></script>
     <script src="../js/functions.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
   </body>
 </html>

@@ -247,7 +247,6 @@
   height: auto;
   border-radius: 10px;
   box-shadow: 5px 15px 28px 5px rgba(#000, 0.18);
- 
 
   @media (max-width: 992px) {
     min-height: 400px;
@@ -660,8 +659,6 @@
     }
   }
 
-  .pt-column:hover {
-  }
 
   /* Column Header */
   .pt-column-header {
@@ -712,11 +709,13 @@
     list-style: none;
     margin-top: 35px;
     font-size: 18px;
+    
 
     li {
       position: relative;
       display: flex;
       align-items: center;
+      justify-content: space-between;
 
       & + li {
         margin-top: 6px;

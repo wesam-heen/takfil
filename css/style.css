@@ -6754,11 +6754,11 @@ iframe {
 /*end Our Work */
 /*Start slider*/
 #section-clients-1 {
-box-shadow: 0 0 15px 15px #eee;
+  box-shadow: 0 0 15px 15px #eee;
+  position: relative;
+  z-index: 99;
 }
-.slider-clients {
 
-}
 /*End slider*/
 /* Start footer */
 .footer {
@@ -6792,7 +6792,7 @@ box-shadow: 0 0 15px 15px #eee;
 .footer .box .social li {
   margin-right: 10px;
 }
-.footer h2{
+.footer h2 {
   font-size: 22px;
 }
 .footer .box .social li a {
@@ -6908,3 +6908,6 @@ box-shadow: 0 0 15px 15px #eee;
   box-shadow: 5px 0 15px var(--main-color);
 }
 /* End footer */
+.pricing-table .pt-column-content li {
+  justify-content: space-between !important;
+}

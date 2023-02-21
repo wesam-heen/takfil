@@ -145,12 +145,12 @@
 }
 
 .box-service-1:hover .box-icon {
-  box-shadow: inset 0 0 0 40px #00992A;
+  box-shadow: inset 0 0 0 40px #00992a;
   color: #fff;
 }
 
 .box-service-1:hover h4 a {
-  color: #00992A;
+  color: #00992a;
 }
 
 /*  [ 04 ] - Section Our Services 2
@@ -261,7 +261,7 @@
   text-align: center;
   font-size: 24px;
   border-radius: 100%;
-  background: #00992A;
+  background: #00992a;
   color: #fff;
   text-indent: 3px;
   transition: all 0.1s !important;
@@ -381,10 +381,12 @@
 }
 
 @media (max-width: 768px) {
-  .list-boxes.boxes-3 > li, .list-boxes.boxes-4 > li {
+  .list-boxes.boxes-3 > li,
+  .list-boxes.boxes-4 > li {
     width: 100%;
   }
-  .list-boxes.boxes-3.mq-768 > li, .list-boxes.boxes-4.mq-768 > li {
+  .list-boxes.boxes-3.mq-768 > li,
+  .list-boxes.boxes-4.mq-768 > li {
     width: 100%;
   }
 }
@@ -425,7 +427,7 @@
   height: 50px;
   flex: 0 0 50px;
   font-size: 48px;
-  color: #00992A;
+  color: #00992a;
   transition: all 0.25s;
 }
 
@@ -526,7 +528,7 @@
 
 .pricing-table .pt-column.featured {
   border: none;
-  box-shadow: inset 0 0 0 4px #00992A;
+  box-shadow: inset 0 0 0 4px #00992a;
 }
 
 .pricing-table .pt-column.featured::before {
@@ -545,16 +547,17 @@
 
 .pricing-table .pt-column.featured .pt-column-header .icon,
 .pricing-table .pt-column.featured .pt-column-header .price h2 {
-  color: #00992A;
+  color: #00992a;
 }
 
 .pricing-table .pt-column.featured .pt-column-content i {
-  color: #00992A;
+  color: #00992a;
 }
 
-.pricing-table .pt-column:not(.featured):hover, .pricing-table .pt-column.featured:hover {
+.pricing-table .pt-column:not(.featured):hover,
+.pricing-table .pt-column.featured:hover {
   transform: translateY(-15px);
-  box-shadow: inset 0 0 0 4px #00992A, 0 20px 28px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 4px #00992a, 0 20px 28px 5px rgba(0, 0, 0, 0.1);
 }
 
 .pricing-table .pt-column:not(.featured):hover {
@@ -562,7 +565,7 @@
 }
 
 .pricing-table .pt-column:not(.featured):hover .pt-column-header .price h2 {
-  color: #00992A;
+  color: #00992a;
 }
 
 .pricing-table .pt-column-header {
@@ -618,6 +621,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between !important;
 }
 
 .pricing-table .pt-column-content li + li {
@@ -657,7 +661,7 @@
 }
 
 .highlighted .testimonial-single-1 {
-  border-color: #00992A;
+  border-color: #00992a;
   box-shadow: 0 0 50px 15px rgba(34, 34, 34, 0.05);
   background-color: #fff;
 }
@@ -677,7 +681,7 @@
   padding: 40px;
   font-size: 16px;
   font-weight: 300;
-  border: 1px solid #00992A;
+  border: 1px solid #00992a;
   border-radius: 10px;
   background-color: #fff;
 }
@@ -693,7 +697,7 @@
   border-radius: 999px;
   font-size: 48px;
   color: #fff;
-  background-color: #00992A;
+  background-color: #00992a;
 }
 
 .testimonial-single-1 .ts-person {
@@ -745,7 +749,7 @@
 /*  [ 08 ] - Section Clients 1
 ================================ */
 #section-clients-1 {
-  background-color: #00992A;
+  background-color: #00992a;
 }
 
 /* Client Single */
@@ -851,7 +855,12 @@
   align-items: center;
 }
 
-.center-vertical .section-content > .container > .row > [class*="col-"] .box-center {
+.center-vertical
+  .section-content
+  > .container
+  > .row
+  > [class*="col-"]
+  .box-center {
   width: 100%;
 }
 

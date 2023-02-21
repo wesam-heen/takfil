@@ -7329,7 +7329,6 @@ a {
   font-family: "Titillium Web", Almarai, sans-serif !important;
 }
 nav {
-  margin: 10px 0;
   max-width: 100%;
   position: relative;
   display: flex !important;
@@ -7346,11 +7345,26 @@ nav {
 
 .nav-bar li {
   padding: 10px;
+  position: relative;
+  overflow: hidden;
 }
 .nav-bar li a {
   font-weight: bold;
 }
-
+.nav-bar li::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 75%;
+  background-color: #00992a;
+  bottom: 0;
+  left: -200%;
+  transform: translateX(-50%);
+  transition: 0.5s ease-in-out;
+}
+.nav-bar li:hover:before {
+  left: 50%;
+}
 .logo-takfil {
   width: 300px;
   height: 150px;
@@ -7399,17 +7413,19 @@ nav {
 @media (max-width: 767px) {
   .nav-bar {
     position: absolute;
-    left: 0px;
-    top: 100px;
+    right: 50%;
+    transform: translateX(50%);
+    top: 90px;
     flex-direction: column;
     z-index: 99;
-    background-color: #3a3a3a;
+    background-color: #ffffff20;
+    backdrop-filter: blur(14px);
     height: max-content;
-    padding: 15px;
     box-shadow: 0 0 5px #eee;
     border-radius: 5px;
     width: 350px;
     transition: 0.5s all ease-in-out;
+    padding: 0;
   }
   .nav-bar-hide {
     opacity: 0;
@@ -7419,9 +7435,17 @@ nav {
     color: #fff !important;
     font-weight: 500px !important;
     text-align: left !important;
+    margin: 7.5px;
   }
   .nav-bar li {
     position: relative;
+    text-align: center;
+  }
+  .nav-link {
+    width: 100%;
+  }
+  .nav-bar .nav-link:not(:last-child) {
+    border-bottom: 0.5px solid #e1e1e1;
   }
 }
 @media (min-width: 920px) {
@@ -7474,6 +7498,7 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
+  cursor: pointer;
 }
 
 .front {
@@ -7487,4 +7512,217 @@ nav {
   width: 25px;
   height: 25px;
   border-radius: 50%;
+}
+
+iframe {
+  width: 100%;
+  height: 250px;
+  padding: 2px;
+  background-image: linear-gradient(to right, #3a3a3a, #00992a);
+  border-radius: 10px;
+  animation: linearGradient 2s infinite;
+}
+
+/*start animation for iframe google map */
+
+@keyframes linearGradient {
+  0% {
+    background-image: linear-gradient(to right, #3a3a3a, #00992a);
+  }
+  50% {
+    background-image: linear-gradient(to right, #00992a, #3a3a3a);
+  }
+  100% {
+    background-image: linear-gradient(to right, #3a3a3a, #00992a);
+  }
+}
+/*end animation for iframe google map */
+
+/*start map section */
+.title-map {
+  color: black;
+  -webkit-text-fill-color: #3a3a3a;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #00992a;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 22px;
+}
+
+/*end map section */
+/*start Our Work */
+.section-parallax .section-content {
+  position: relative;
+  background-image: url("../images/files/section1.jpg");
+  overflow: hidden;
+}
+.section-parallax .section-content::before {
+  content: "";
+  position: absolute;
+  background-color: #ffffffb3;
+  backdrop-filter: blur(12px);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/*end Our Work */
+/*Start slider*/
+#section-clients-1 {
+  box-shadow: 0 0 15px 15px #eee;
+  position: relative;
+  z-index: 99;
+}
+
+/*End slider*/
+/* Start footer */
+.footer {
+  margin-top: 50px;
+  background-color: #3a3a3a;
+  padding: 70px 0 0;
+  box-shadow: 5px 0 15px var(--main-color);
+}
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+}
+.footer li {
+  display: block;
+}
+.footer .box h3 {
+  color: white;
+  font-size: 50px;
+  margin: 0 0 20px;
+  text-shadow: 0 0 10px var(--main-color);
+}
+.footer .box .social {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .footer .box .social {
+    justify-content: center;
+  }
+}
+.footer .box .social li {
+  margin-right: 10px;
+}
+.footer h2 {
+  font-size: 22px;
+}
+.footer .box .social li a {
+  background-color: #313131;
+  color: #b9b9b9;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: var(--main-transtion);
+  box-shadow: 0 0 5px var(--main-color);
+}
+.footer .box .social li a i {
+  color: white;
+}
+.footer .box .social .facebook:hover {
+  background-color: #1877f2;
+  box-shadow: 0 0 0px var(--main-color);
+}
+.footer .box .social .telegram:hover {
+  background-color: #0088cc;
+  box-shadow: 0 0 0px var(--main-color);
+}
+.footer .box .social .whatsapp:hover {
+  background-color: #25d366;
+  box-shadow: 0 0 0px var(--main-color);
+}
+
+.footer .box .text {
+  margin-top: 20px;
+  line-height: 2;
+  color: #b9b9b9;
+}
+.footer .box h2 {
+  margin-bottom: 40px;
+  color: #fff;
+  text-shadow: 0 0 10px var(--main-color);
+}
+.footer .box .links li {
+  padding: 15px 0;
+  transition: var(--main-transtion);
+}
+.footer .box .links li:not(:last-child) {
+  border-bottom: 1px solid #444;
+}
+.footer .box .links li:hover {
+  padding-left: 10px;
+}
+.footer .box .links li:hover a {
+  color: white;
+}
+.footer .box .links li a {
+  color: #b9b9b9;
+  transition: var(--main-transtion);
+}
+.footer .box .links li a::before {
+  content: ">";
+  margin-right: 10px;
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 16px;
+}
+.footer .time-work h2 {
+  margin-bottom: 40px;
+  color: #fff;
+  text-shadow: 0 0 10px var(--main-color);
+}
+.footer .line {
+  display: flex;
+  align-items: center;
+  color: #b9b9b9;
+  margin-bottom: 30px;
+}
+.footer .line span {
+  margin: 0px 10px;
+  font-size: 12px;
+  width: 75px;
+}
+.footer .line p {
+  font-size: 12px;
+}
+
+@media (max-width: 767px) {
+  .footer .box .links li {
+    text-align: left;
+  }
+  .footer .line .info {
+    margin-right: 0;
+    margin-top: 15px;
+  }
+}
+.footer .line .info {
+  line-height: 1.8;
+  flex: 1;
+  margin-left: 20px;
+}
+.footer .line .info span {
+  display: block;
+  font-size: 16px;
+  width: 100%;
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  margin: 50px 0 0;
+  border-top: 1px solid #444;
+  box-shadow: 5px 0 15px var(--main-color);
+}
+/* End footer */
+.pricing-table .pt-column-content li {
+  justify-content: space-between !important;
 }
