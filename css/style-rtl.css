@@ -31,6 +31,10 @@
  *   helpers-placeholders.scss
  * =================================================================== */
 /* BG Gradients */
+/* global rules */
+:root{
+  --main-transtion:0.5s ease-in-out;
+}
 /* Opacity Values */
 .opacity-05 {
   opacity: 0.05;
@@ -7351,19 +7355,19 @@ nav {
 .nav-bar li a {
   font-weight: bold;
 }
-.nav-bar li::before {
+.nav-bar li:not(:last-child)::before {
   content: "";
   position: absolute;
   height: 2px;
   width: 75%;
   background-color: #00992a;
   bottom: 0;
-  left: -200%;
-  transform: translateX(-50%);
+  right: -200%;
+  transform: translateX(50%);
   transition: 0.5s ease-in-out;
 }
 .nav-bar li:hover:before {
-  left: 50%;
+  right: 50%;
 }
 .logo-takfil {
   width: 300px;
@@ -7579,7 +7583,7 @@ iframe {
 .footer {
   margin-top: 50px;
   background-color: #3a3a3a;
-  padding: 70px 0 0;
+  padding: 40px 0 0;
   box-shadow: 5px 0 15px var(--main-color);
 }
 @media (max-width: 767px) {
@@ -7657,7 +7661,7 @@ iframe {
   border-bottom: 1px solid #444;
 }
 .footer .box .links li:hover {
-  padding-left: 10px;
+  padding-right: 10px;
 }
 .footer .box .links li:hover a {
   color: white;
@@ -7668,10 +7672,16 @@ iframe {
 }
 .footer .box .links li a::before {
   content: ">";
-  margin-right: 10px;
+  margin-left: 10px;
   color: var(--main-color);
   font-weight: bold;
   font-size: 16px;
+}
+.info span a{
+  color: #b9b9b9 !important;
+}
+.info span a:hover{
+  color: #fff !important;
 }
 .footer .time-work h2 {
   margin-bottom: 40px;
@@ -7726,3 +7736,13 @@ iframe {
 .pricing-table .pt-column-content li {
   justify-content: space-between !important;
 }
+/* background */
+.background-section {
+  background-image: url("../images/files/background.jpeg");
+  background-size: cover;
+}
+.background-main{
+  background-image: url('../images/files/mainbackground.png');
+  background-size: cover;
+}
+/* background */

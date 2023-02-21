@@ -32,6 +32,10 @@
  * =================================================================== */
 /* BG Gradients */
 /* Opacity Values */
+/* global rules */
+:root {
+  --main-transtion: 0.5s ease-in-out;
+}
 .opacity-05 {
   opacity: 0.05;
 }
@@ -6537,7 +6541,7 @@ nav {
 .nav-bar li a {
   font-weight: bold;
 }
-.nav-bar li::before {
+.nav-bar li:not(:last-child)::before {
   content: "";
   position: absolute;
   height: 2px;
@@ -6764,7 +6768,7 @@ iframe {
 .footer {
   margin-top: 50px;
   background-color: #3a3a3a;
-  padding: 70px 0 0;
+  padding: 40px 0 0;
   box-shadow: 5px 0 15px var(--main-color);
 }
 @media (max-width: 767px) {
@@ -6837,6 +6841,12 @@ iframe {
 .footer .box .links li {
   padding: 15px 0;
   transition: var(--main-transtion);
+}
+.info span a {
+  color: #b9b9b9 !important;
+}
+.info span a:hover {
+  color: #fff !important;
 }
 .footer .box .links li:not(:last-child) {
   border-bottom: 1px solid #444;
@@ -6911,3 +6921,13 @@ iframe {
 .pricing-table .pt-column-content li {
   justify-content: space-between !important;
 }
+/* background */
+.background-section {
+  background-image: url("../images/files/background.jpeg");
+  background-size: cover;
+}
+.background-main{
+  background-image: url('../images/files/mainbackground.png');
+  background-size: cover;
+}
+/* background */
