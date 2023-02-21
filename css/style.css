@@ -6515,7 +6515,6 @@ a {
   font-family: "Titillium Web", Almarai, sans-serif !important;
 }
 nav {
-  margin: 10px 0;
   max-width: 100%;
   position: relative;
   display: flex !important;
@@ -6532,11 +6531,26 @@ nav {
 
 .nav-bar li {
   padding: 10px;
+  position: relative;
+  overflow: hidden;
 }
 .nav-bar li a {
   font-weight: bold;
 }
-
+.nav-bar li::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 75%;
+  background-color: #00992a;
+  bottom: 0;
+  left: -200%;
+  transform: translateX(-50%);
+  transition: 0.5s ease-in-out;
+}
+.nav-bar li:hover:before {
+  left: 50%;
+}
 .logo-takfil {
   width: 300px;
   height: 150px;
@@ -6587,15 +6601,15 @@ nav {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 100px;
+    top: 90px;
     flex-direction: column;
     z-index: 99;
-    background-color: #3a3a3a;
+    background-color: #ffffff20;
+    backdrop-filter: blur(14px);
     height: max-content;
-    padding: 15px;
     box-shadow: 0 0 5px #eee;
     border-radius: 5px;
-    width: 300px;
+    width: 350px;
     transition: 0.5s all ease-in-out;
   }
   .nav-bar-hide {
@@ -6606,9 +6620,17 @@ nav {
     color: #fff !important;
     font-weight: 500px !important;
     text-align: left !important;
+    margin: 7.5px;
   }
   .nav-bar li {
     position: relative;
+    text-align: center;
+  }
+  .nav-link {
+    width: 100%;
+  }
+  .nav-bar .nav-link:not(:last-child) {
+    border-bottom: 0.5px solid #e1e1e1;
   }
 }
 @media (min-width: 920px) {
@@ -6713,6 +6735,31 @@ iframe {
 }
 
 /*end map section */
+/*start Our Work */
+.section-parallax .section-content {
+  position: relative;
+  background-image: url("../images/files/section1.jpg");
+  overflow: hidden;
+}
+.section-parallax .section-content::before {
+  content: "";
+  position: absolute;
+  background-color: #ffffffb3;
+  backdrop-filter: blur(12px);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/*end Our Work */
+/*Start slider*/
+#section-clients-1 {
+box-shadow: 0 0 15px 15px #eee;
+}
+.slider-clients {
+
+}
+/*End slider*/
 /* Start footer */
 .footer {
   margin-top: 50px;
@@ -6745,6 +6792,9 @@ iframe {
 .footer .box .social li {
   margin-right: 10px;
 }
+.footer h2{
+  font-size: 22px;
+}
 .footer .box .social li a {
   background-color: #313131;
   color: #b9b9b9;
@@ -6753,7 +6803,7 @@ iframe {
   align-items: center;
   width: 50px;
   height: 50px;
-  font-size: 20px;
+  font-size: 16px;
   border-radius: 10px;
   transition: var(--main-transtion);
   box-shadow: 0 0 5px var(--main-color);
@@ -6806,7 +6856,7 @@ iframe {
   margin-right: 10px;
   color: var(--main-color);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
 }
 .footer .time-work h2 {
   margin-bottom: 40px;
