@@ -1,14 +1,15 @@
-
-
 //for menu bar transition
-const menu=document.querySelector(".menu-icon")
-const navBar=document.querySelector(".nav-bar")
-const menuSpan=document.querySelectorAll('.menu-icon span')
+const menu = document.querySelector(".menu-icon");
+const navBar = document.querySelector(".nav-bar");
+const menuSpan = document.querySelectorAll(".menu-icon span");
 
+menu.addEventListener("click", () => {
+  navBar.classList.toggle("nav-bar-hide");
+  menu.classList.toggle("open");
+});
 
-menu.addEventListener('click',()=>{
-    navBar.classList.toggle('nav-bar-hide')
-    menu.classList.toggle('open')
+let form = document.querySelectorAll("form");
 
-})
-
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+});
