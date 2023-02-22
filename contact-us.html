@@ -124,12 +124,12 @@
  <div class="contact-us">
 	
 <div class="container">
-	<form method="POST" action="config.php" >
+	<form method="POST" action="config.php" class="form-contact">
 	  <p>Welcome <br><span>Contact Us Now</span> </p>
 	  <input type="text" name="name" placeholder="Please insert your name"><br>
 	  <input type="email" name="email" placeholder="please insert your email"><br>
 	  <input type="number" name="phone" placeholder="please insert your phone number"><br>
-	  <textarea name="message"cols="30" rows="10"  placeholder="Write your Message"></textarea><br>
+	  <input type="text" class="textarea" name="message"cols="30" rows="10"  placeholder="Write your Message"></input><br>
 	  <input type="submit" value="Send">
 	</form>
   
@@ -280,7 +280,6 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/functions.js"></script>
     <script src="js/main.js"></script>
-   
     <script src="js/wow.min.js"></script>
     <script>
     new WOW().init();

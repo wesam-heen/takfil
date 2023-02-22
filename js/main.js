@@ -8,8 +8,15 @@ menu.addEventListener("click", () => {
   menu.classList.toggle("open");
 });
 
-let form = document.querySelectorAll("form");
-
-form.addEventListener("submit", (e) => {
+let form = document.querySelector(".form-contact");
+form.addEventListener("submit", () => {
   e.preventDefault();
 });
+
+
+// forms.map((form) => {
+//   form.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//   });
+//   console.log(form);
+// });
