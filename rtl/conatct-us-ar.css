@@ -110,7 +110,7 @@ button:focus {
   }
 
   input,
-  textarea {
+  .textarea {
     width: 100%;
   }
 }

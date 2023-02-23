@@ -6703,41 +6703,54 @@ nav {
   border-radius: 50%;
 }
 
+/*start map section */
+.title-map {
+  color: #3a3a3a;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 22px;
+  background-color: #ffffff50;
+  backdrop-filter: blur(14px);
+  border-radius: 10px;
+  box-shadow: 0 0 2px #3a3a3a;
+}
+.map {
+  position: relative;
+  padding: 35px;
+  background-image: url("../images/files/map.png");
+  background-size: cover;
+  background-position: bottom;
+}
+.map h2 {
+  position: relative;
+}
+.map::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff50;
+  backdrop-filter: blur(6px);
+}
+
 iframe {
   width: 100%;
   height: 250px;
   padding: 2px;
-  background-image: linear-gradient(to right, #3a3a3a, #00992a);
-  border-radius: 10px;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
   animation: linearGradient 2s infinite;
 }
 
-/*start animation for iframe google map */
-
-@keyframes linearGradient {
-  0% {
-    background-image: linear-gradient(to right, #3a3a3a, #00992a);
-  }
-  50% {
-    background-image: linear-gradient(to right, #00992a, #3a3a3a);
-  }
-  100% {
-    background-image: linear-gradient(to right, #3a3a3a, #00992a);
+@media (max-width: 767px) {
+  .title-map {
+    padding: 10px;
+    font-size: 16px;
   }
 }
-/*end animation for iframe google map */
-
-/*start map section */
-.title-map {
-  color: black;
-  -webkit-text-fill-color: #3a3a3a;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #00992a;
-  text-align: center;
-  line-height: 1.7;
-  font-size: 22px;
-}
-
 /*end map section */
 /*start Our Work */
 .section-parallax .section-content {
@@ -6766,7 +6779,6 @@ iframe {
 /*End slider*/
 /* Start footer */
 .footer {
-  margin-top: 50px;
   background-color: #3a3a3a;
   padding: 40px 0 0;
   box-shadow: 5px 0 15px var(--main-color);
@@ -6926,8 +6938,8 @@ iframe {
   background-image: url("../images/files/background.jpeg");
   background-size: cover;
 }
-.background-main{
-  background-image: url('../images/files/mainbackground.png');
+.background-main {
+  background-image: url("../images/files/mainbackground.png");
   background-size: cover;
 }
 /* background */
