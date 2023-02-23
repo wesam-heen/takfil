@@ -1,0 +1,141 @@
+.nav-bar li a {
+  color: #636363 !important;
+}
+@media(max-width:767px){
+  .nav-bar li a {
+    color: #fff !important;
+  } 
+  .menu-icon.open span:first-child,
+.menu-icon.open span:last-child {
+  top: 6px;
+  background-color: #eebd1a;
+}
+}
+.nav-bar li:not(:last-child)::before {
+  background-color: #eebd1a;
+}
+.language a img {
+  box-shadow: 0 0 5px #636363;
+}
+.digital-marketing-page {
+  padding: 50px 0;
+  background-image: linear-gradient(30deg, #eebd1a 30%, #636363 60%);
+}
+.icons-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.icons-container .box-icon {
+  text-align: center;
+  min-width: 350px;
+}
+.icons-container .box-icon img {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  background-color: #ffffff10;
+  backdrop-filter: blur(14px);
+  border-radius: 50%;
+  box-shadow: 0 0 5px #eebd1a;
+}
+.icons-container .box-icon h4 {
+  margin: 20px;
+  color: #fff;
+}
+/* start flip card */
+.our-core-values {
+  height: max-content;
+  padding: 50px;
+  background-image: linear-gradient(135deg, #eebd1a 30%, #636363 60%);
+}
+.our-core-values .core-container {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  flex-wrap: wrap;
+}
+.card__face--front {
+  display: flex;
+  flex-direction: column;
+}
+.card__face--front h4 {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 2rem;
+  width: 150px;
+}
+@media (max-width: 767px) {
+  .our-core-values .core-container {
+    justify-content: center;
+  }
+}
+.card-core {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+  transform-style: preserve-3d;
+  margin-top: 20px;
+  transition: all ease 0.2s;
+  -webkit-box-shadow: 2px 3px 2px 0px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 2px 3px 2px 0px rgba(0, 0, 0, 0.17);
+  box-shadow: 2px 3px 2px 0px rgba(0, 0, 0, 0.17);
+  transition: all ease 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.card-core::after {
+  content: "";
+  width: 30px;
+  height: 200px;
+  position: absolute;
+  left: -20px;
+  top: 0;
+  margin-top: -20px;
+  background: #fff;
+  opacity: 0.6;
+  filter: blur(20px);
+  animation: login-blur 3s infinite;
+  animation-delay: 0s;
+  transform-origin: top;
+}
+@keyframes login-blur {
+  from {
+    transform: translate(0) rotate(45deg);
+  }
+  to {
+    transform: translateX(370px) rotate(45deg);
+  }
+}
+.card-core:hover {
+  transform: rotateY(0.5turn);
+}
+
+.card__face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-image: linear-gradient(45deg, #636363, #fff);
+  color: #fff;
+  text-align: center;
+}
+.card__face i {
+  color: #636363;
+}
+.card__face--back {
+  transform: rotateY(0.5turn);
+  font-size: 2rem;
+  text-indent: none;
+}
+
+/* end flip card */

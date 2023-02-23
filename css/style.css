@@ -6567,7 +6567,7 @@ nav {
   position: relative;
 }
 .menu-icon span {
-  background-color: black;
+  background-color: #636363;
   height: 2px;
   position: absolute;
   width: 100%;
@@ -6608,7 +6608,7 @@ nav {
     top: 90px;
     flex-direction: column;
     z-index: 99;
-    background-color: #ffffff20;
+    background-color: #63636399;
     backdrop-filter: blur(14px);
     height: max-content;
     box-shadow: 0 0 5px #eee;
@@ -6779,7 +6779,7 @@ iframe {
 /*End slider*/
 /* Start footer */
 .footer {
-  background-color: #3a3a3a;
+  background-color: #636363;
   padding: 40px 0 0;
   box-shadow: 5px 0 15px var(--main-color);
 }
