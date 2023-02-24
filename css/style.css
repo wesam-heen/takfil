@@ -6540,6 +6540,7 @@ nav {
 }
 .nav-bar li a {
   font-weight: bold;
+  color: #636363;
 }
 .nav-bar li:not(:last-child)::before {
   content: "";
@@ -6551,6 +6552,9 @@ nav {
   left: -200%;
   transform: translateX(-50%);
   transition: 0.5s ease-in-out;
+}
+.nav-bar li:hover a{
+  color: #00992a;
 }
 .nav-bar li:hover:before {
   left: 50%;
@@ -6936,10 +6940,6 @@ iframe {
 /* background */
 .background-section {
   background-image: url("../images/files/background.jpeg");
-  background-size: cover;
-}
-.background-main {
-  background-image: url("../images/files/mainbackground.png");
   background-size: cover;
 }
 /* background */
