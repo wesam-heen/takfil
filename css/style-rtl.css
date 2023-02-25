@@ -7354,6 +7354,7 @@ nav {
 }
 .nav-bar li a {
   font-weight: bold;
+  color: #636363;
 }
 .nav-bar li:not(:last-child)::before {
   content: "";
@@ -7422,7 +7423,7 @@ nav {
     top: 100px;
     flex-direction: column;
     z-index: 99;
-    background-color: #ffffff20;
+    background-color: #63636399;
     backdrop-filter: blur(14px);
     height: max-content;
     box-shadow: 0 0 5px #eee;
@@ -7666,7 +7667,8 @@ iframe {
   text-shadow: 0 0 10px var(--main-color);
 }
 .footer .box .links li {
-  padding: 15px 0;text-align: right !important;
+  padding: 15px 0;
+  text-align: right !important;
   transition: var(--main-transtion);
 }
 .footer .box .links li:not(:last-child) {
