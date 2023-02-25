@@ -7356,6 +7356,10 @@ nav {
   font-weight: bold;
   color: #636363;
 }
+.nav-bar li:hover a {
+  font-weight: bold;
+  color: #00992a;
+}
 .nav-bar li:not(:last-child)::before {
   content: "";
   position: absolute;
@@ -7760,3 +7764,11 @@ iframe {
   background-size: cover;
 }
 /* background */
+.kjxaQJ {
+  right: auto;
+  left: 0 !important;
+}
+.ezpWWK {
+  left: 10px !important;
+  right: auto;
+}
