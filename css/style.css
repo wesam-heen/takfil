@@ -6518,19 +6518,22 @@ select option[disabled] {
 a {
   font-family: "Titillium Web", Almarai, sans-serif !important;
 }
+
 nav {
   max-width: 100%;
   position: relative;
   display: flex !important;
   justify-content: space-between;
   align-items: center;
+  
 }
 .nav-bar {
   display: flex;
-  justify-content: space-between;
   height: 100px;
+  justify-content: space-around;
   align-items: center;
   list-style: none;
+  flex: 1;
 }
 
 .nav-bar li {

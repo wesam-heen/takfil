@@ -70,7 +70,6 @@
             </div>
           </div>
         </a>
-
         <ul class="nav-bar nav-bar-hide">
           <li class="nav-link">
             <a href="takfil-documents-services-clearing.html">
@@ -102,6 +101,7 @@
             </a>
           </li>
         </ul>
+
         <div class="menu-icon">
           <span></span>
           <span></span>
@@ -1337,12 +1337,31 @@
 
     <!-- External JavaScripts
 	============================================= -->
-    <script
-      src="https://static.elfsight.com/platform/platform.js"
-      data-use-service-core
-      defer
-    ></script>
-    <div class="elfsight-app-e0a594d9-b0be-4b3a-a5de-3b9b4f865ad7"></div>
+    <script type="text/javascript">
+      var config = {
+        phone: " 971527084804",
+        call: "Message Us",
+        position: "ww-right",
+        size: "ww-normal",
+        text: "",
+        type: "ww-extended",
+        brand: "",
+        subtitle: "",
+        welcome: "",
+      };
+      var proto = document.location.protocol,
+        host = "cloudfront.net",
+        url = proto + "//d3kzab8jj16n2f." + host;
+      var s = document.createElement("script");
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = url + "/v2/main.js";
+      s.onload = function () {
+        tmWidgetInit(config);
+      };
+      var x = document.getElementsByTagName("script")[0];
+      x.parentNode.insertBefore(s, x);
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
       integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
