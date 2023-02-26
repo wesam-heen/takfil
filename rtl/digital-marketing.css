@@ -28,7 +28,7 @@
 }
 .icons-container .box-icon {
   text-align: center;
-  min-width: 350px;
+  margin: auto;
 }
 .box-icon .description {
   background-color: #ffffff10;
@@ -115,9 +115,6 @@
   to {
     transform: translateX(370px) rotate(45deg);
   }
-}
-.card-core:hover {
-  transform: rotateY(0.5turn);
 }
 
 .card__face {

@@ -6553,7 +6553,7 @@ nav {
   transform: translateX(-50%);
   transition: 0.5s ease-in-out;
 }
-.nav-bar li:hover a{
+.nav-bar li:hover a {
   color: #00992a;
 }
 .nav-bar li:hover:before {
@@ -6803,6 +6803,10 @@ iframe {
 }
 .footer .box .social {
   display: flex;
+  flex-wrap: wrap;
+}
+.footer .box .social li{
+margin-top: 10px;
 }
 @media (max-width: 767px) {
   .footer .box .social {
@@ -6833,15 +6837,23 @@ iframe {
 }
 .footer .box .social .facebook:hover {
   background-color: #1877f2;
-  box-shadow: 0 0 0px var(--main-color);
+
 }
-.footer .box .social .telegram:hover {
-  background-color: #0088cc;
-  box-shadow: 0 0 0px var(--main-color);
+.footer .box .social .tiktok:hover {
+  background-color: #ff0050;
+
 }
 .footer .box .social .whatsapp:hover {
   background-color: #25d366;
-  box-shadow: 0 0 0px var(--main-color);
+}
+.footer .box .social .linkedin:hover {
+  background-color: #0077b5;
+}
+.footer .box .social .instagram:hover {
+  background-color: #833ab4;
+}
+.footer .box .social .youtube:hover {
+  background-color: #ff0000;
 }
 
 .footer .box .text {
@@ -6925,13 +6937,23 @@ iframe {
 }
 
 .footer .copyright {
-  padding: 25px 0;
-  text-align: center;
-  font-size: 12px;
+  padding: 10px 0;
+  font-size: 15px;
   color: white;
-  margin: 50px 0 0;
+  margin: 50px auto 0;
   border-top: 1px solid #444;
   box-shadow: 5px 0 15px var(--main-color);
+  display: flex;
+  justify-content: space-around;
+}
+.footer .copyright span a {
+  color: #fff;
+  font-weight: bold;
+}
+@media(max-width:767px){
+  .footer .copyright{
+    font-size: 8px !important;
+  }
 }
 /* End footer */
 .pricing-table .pt-column-content li {
@@ -6942,4 +6964,4 @@ iframe {
   background-image: url("../images/files/background.jpeg");
   background-size: cover;
 }
-/* background */
+/* background *

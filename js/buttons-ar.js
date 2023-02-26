@@ -4,9 +4,6 @@ const button2 = document.getElementById("button2");
 const button3 = document.getElementById("button3");
 const button4 = document.getElementById("button4");
 const button5 = document.getElementById("button5");
-const button6 = document.getElementById("button6");
-const button7 = document.getElementById("button7");
-const button8 = document.getElementById("button8");
 const output = document.getElementById("output");
 
 button1.addEventListener("click", () => {
@@ -53,6 +50,14 @@ button4.addEventListener("click", () => {
   تسجيل منتجات    
   </p>
   <p>خدمات الإسترحام</p>
+  `;
+});
+button5.addEventListener("click", () => {
+  output.innerHTML = `
+  نتخصص في إنجاز المعاملات والإجراءات الخاصة برجال الأعمال والشركات لنسهل على عملائنا تخليص 
+  كافة الإجراءات المرتبطة بالشركات ورجال الأعمال مع الجهات المختلفة منها الحكومية والخاصة
+  تشتمل خدمات تخليص المعاملات  تجديد الرخص التجارية وتجديد الإقامات وفتح الملفات في الجوازات وكذلك متابعة معاملات وزارة العمل و الهجرة و الجوازات أيضاً كافة الإستشارات الإستثمارية في جميع المجالات الإقتصادية، من خلال أفضل الكوادر في هذا المجال.
+  
   `;
 });
 

@@ -7619,6 +7619,7 @@ iframe {
 }
 .footer .box .social {
   display: flex;
+  flex-wrap: wrap;
 }
 @media (max-width: 767px) {
   .footer .box .social {
@@ -7627,6 +7628,7 @@ iframe {
 }
 .footer .box .social li {
   margin-right: 10px;
+  margin-top: 10px;
 }
 .footer h2 {
   font-size: 22px;
@@ -7649,16 +7651,25 @@ iframe {
 }
 .footer .box .social .facebook:hover {
   background-color: #1877f2;
-  box-shadow: 0 0 0px var(--main-color);
+
 }
-.footer .box .social .telegram:hover {
-  background-color: #0088cc;
-  box-shadow: 0 0 0px var(--main-color);
+.footer .box .social .tiktok:hover {
+  background-color: #ff0050;
+
 }
 .footer .box .social .whatsapp:hover {
   background-color: #25d366;
-  box-shadow: 0 0 0px var(--main-color);
 }
+.footer .box .social .linkedin:hover {
+  background-color: #0077b5;
+}
+.footer .box .social .instagram:hover {
+  background-color: #833ab4;
+}
+.footer .box .social .youtube:hover {
+  background-color: #ff0000;
+}
+
 
 .footer .box .text {
   margin-top: 20px;

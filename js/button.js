@@ -37,7 +37,7 @@ button3.addEventListener("click", () => {
   <p>Emirati Id Printing</p>
   <p>Printing Articles of Association </p>
   <p>Printing Civil Business Contracts</p>
-  <p>Printing Abandonment and Sexual Transactions</p>
+  <p>Printing Immigration and Nationality Transactions</p>
   <p>Printing Labour and Workers Transactions</p>
   
   `;
@@ -48,6 +48,14 @@ button4.addEventListener("click", () => {
   <p>Trademark Registration</p>
   <p>Products Registration</p>
   <p>Amnesty Services</p>
+  `;
+});
+button5.addEventListener("click", () => {
+  output.innerHTML = `
+  We specialize in completing transactions and procedures for businessmen and companies to facilitate documents clearance for our customers
+All procedures related to companies and businessmen government or private
+Our services include renewal of commercial licenses, renewal of residencies, and opening of files in government institutions, follow-up of transactions of the Ministry of Labour, Immigration and Passports, as well as all investment consultations in all economic fields, through the best team in this field
+
   `;
 });
 
