@@ -89,53 +89,53 @@
 
 .accordion ul li:nth-child(1) {
   background-image: url("./images/logos/logo1.png");
-  background-position: 0% 0%;
+  background-position: 50% 50%;
   background-size: contain;
 }
 
 .accordion ul li:nth-child(2) {
   background-image: url("./images/logos/logo2.png");
-  background-position: 0% 0%;
+  background-position: 50% 50%;
   background-size: contain;
 }
 
 .accordion ul li:nth-child(3) {
   background-image: url("./images/logos/logo3.png");
-  background-position: 0% 0%;
+  background-position: 50% 50%;
   background-size: contain;
 }
 
 .accordion ul li:nth-child(4) {
   background-image: url("./images/logos/logo4.png");
-  background-position: 0% 0%;
+  background-position: 50% 50%;
   background-size: contain;
 }
 
 .accordion ul li:nth-child(5) {
   background-image: url("./images/logos/logo5.png");
-  background-position: 0% 0%;
+  background-position: 50% 50%;
   background-size: contain;
 }
 
 .accordion ul li:nth-child(6) {
   background-image: url("./images/logos/logo6.png");
-  background-position: 0% 0%;
+  background-position: 50% 50%;
   background-size: contain;
 }
 .accordion ul li:nth-child(7) {
   background-image: url("./images/logos/logo7.png");
-  background-position: 0% 0%;
+  background-position: 50% 50%;
   background-size: contain;
 }
 
 .accordion ul li:nth-child(8) {
   background-image: url("./images/logos/logo8.png");
-  background-position: 0% 0%;
+  background-position: 50% 50%;
   background-size: contain;
 }
 .accordion ul li:nth-child(9) {
   background-image: url("./images/logos/logo9.png");
-  background-position: 0% 0%;
+  background-position: 50% 50%;
   background-size: contain;
 }
 .accordion ul li {

@@ -6968,7 +6968,7 @@ iframe {
 .customers-title {
   width: fit-content;
   position: relative;
-  margin: 50px auto;
+  margin: 20px auto 0px;
   color: #636363;
 }
 .customers-title::before {
