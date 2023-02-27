@@ -6940,14 +6940,13 @@ margin-top: 10px;
 }
 
 .footer .copyright {
-  padding: 10px 0;
-  font-size: 15px;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 12px;
   color: white;
-  margin: 50px auto 0;
+  margin: 50px 0 0;
   border-top: 1px solid #444;
   box-shadow: 5px 0 15px var(--main-color);
-  display: flex;
-  justify-content: space-around;
 }
 .footer .copyright span a {
   color: #fff;

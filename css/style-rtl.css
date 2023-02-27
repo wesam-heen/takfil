@@ -7652,11 +7652,9 @@ iframe {
 }
 .footer .box .social .facebook:hover {
   background-color: #1877f2;
-
 }
 .footer .box .social .tiktok:hover {
   background-color: #ff0050;
-
 }
 .footer .box .social .whatsapp:hover {
   background-color: #25d366;
@@ -7670,7 +7668,6 @@ iframe {
 .footer .box .social .youtube:hover {
   background-color: #ff0000;
 }
-
 
 .footer .box .text {
   margin-top: 20px;
@@ -7761,6 +7758,15 @@ iframe {
   margin: 50px 0 0;
   border-top: 1px solid #444;
   box-shadow: 5px 0 15px var(--main-color);
+}
+.footer .copyright span a {
+  color: #fff;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .footer .copyright {
+    font-size: 8px !important;
+  }
 }
 /* End footer */
 .pricing-table .pt-column-content li {
