@@ -7791,3 +7791,19 @@ iframe {
   left: 10px !important;
   right: auto;
 }
+.customers-title {
+  width: fit-content;
+  position: relative;
+  margin: 50px auto;
+  color: #636363;
+}
+.customers-title::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #636363;
+}
