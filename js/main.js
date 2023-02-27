@@ -9,10 +9,6 @@ menu.addEventListener("click", () => {
 });
 
 
-window.onload = function () {
-  setInterval(function () {
-    plusSlides(1);
-  }, 3000);
-};
+
 
 
