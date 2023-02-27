@@ -28,6 +28,7 @@
 }
 .icons-container .box-icon {
   text-align: center;
+  margin: auto;
 }
 .box-icon .description {
   background-color: #ffffff10;
