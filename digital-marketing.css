@@ -19,7 +19,7 @@
 }
 .digital-marketing-page {
   padding: 50px 0;
-  background: linear-gradient(45deg, #3a3a3a20, #00992a 60%);
+  background: linear-gradient(45deg, #00992a99 50%, #00992a);
 }
 .icons-container {
   display: flex;
@@ -35,6 +35,8 @@
   color: #fff;
   padding: 10px;
   box-shadow: 0 0 5px #eee;
+  letter-spacing: 1px;
+  line-height: 1.8;
 }
 .icons-container .box-icon img {
   width: 200px;
@@ -53,7 +55,7 @@
 .our-core-values {
   height: max-content;
   padding: 50px;
-  background: linear-gradient(135deg, #3a3a3a20, #00992a 60%);
+  background: linear-gradient(135deg, #00992a99 50%, #00992a);
 }
 .our-core-values .core-container {
   display: flex;
